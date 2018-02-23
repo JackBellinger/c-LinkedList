@@ -1,4 +1,4 @@
-all: LinkedList
+all: LinkedList clean
 
 LinkedList: LinkedList.o LinkFun.o
 	g++ LinkedList.o LinkFun.o -o LinkedList
@@ -10,4 +10,4 @@ LinkFun.o: LinkFun.cpp link.h
 	g++ -c LinkFun.cpp
 
 clean: 
-	rm -rf *o LinkedList
+	rm -rf *o
