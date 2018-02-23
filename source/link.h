@@ -11,15 +11,12 @@ struct node{
     int idNumber;
     node* next;
 };
-class LinkedList{
-    node* head = 0;
-    public:
-    node* createNode();
-    node* insertNode(LinkedList*, node*);
-    node* searchNode(LinkedList*, int);
-    LinkedList* deleteNode(LinkedList*, int);
-    void printList(LinkedList*);
-};
+
+node* createNode();
+node* insertNode(node*, node*);
+node* searchNode(node*, int);
+node* deleteNode(node*, int);
+void printList(node*);
 
 
 #endif
